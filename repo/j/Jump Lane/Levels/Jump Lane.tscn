@@ -1,0 +1,140 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://base/Map.gd" type="Script" id=1]
+[ext_resource path="res://Assets/PlayerHolder.png" type="Texture" id=2]
+[ext_resource path="res://base/player.gd" type="Script" id=3]
+[ext_resource path="res://Assets/Black.png" type="Texture" id=4]
+
+[node name="map" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="player" type="Sprite" parent="."]
+position = Vector2( 472, 294 )
+scale = Vector2( 1.25, 1.25 )
+texture = ExtResource( 2 )
+script = ExtResource( 3 )
+gravity = 20
+room_size = 0.0
+
+[node name="build" type="Node2D" parent="."]
+
+[node name="Block" type="Sprite" parent="build"]
+position = Vector2( 461, 396 )
+scale = Vector2( 7.32812, 3.15625 )
+texture = ExtResource( 4 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="build/Block"]
+visible = false
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="build/Block/StaticBody2D"]
+polygon = PoolVector2Array( 16, 16, -16, 16, -16, -16, 16, -16 )
+
+[node name="Block2" type="Sprite" parent="build"]
+position = Vector2( 822, 443 )
+scale = Vector2( 7.32812, 3.15625 )
+texture = ExtResource( 4 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="build/Block2"]
+visible = false
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="build/Block2/StaticBody2D"]
+polygon = PoolVector2Array( 16, 16, -16, 16, -16, -16, 16, -16 )
+
+[node name="Block3" type="Sprite" parent="build"]
+position = Vector2( 1144, 405 )
+scale = Vector2( 7.32812, 3.15625 )
+texture = ExtResource( 4 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="build/Block3"]
+visible = false
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="build/Block3/StaticBody2D"]
+polygon = PoolVector2Array( 16, 16, -16, 16, -16, -16, 16, -16 )
+
+[node name="Block4" type="Sprite" parent="build"]
+position = Vector2( 1422, 357 )
+scale = Vector2( 7.32812, 3.15625 )
+texture = ExtResource( 4 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="build/Block4"]
+visible = false
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="build/Block4/StaticBody2D"]
+polygon = PoolVector2Array( 16, 16, -16, 16, -16, -16, 16, -16 )
+
+[node name="Block5" type="Sprite" parent="build"]
+position = Vector2( 1706, 333 )
+scale = Vector2( 7.32812, 3.15625 )
+texture = ExtResource( 4 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="build/Block5"]
+visible = false
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="build/Block5/StaticBody2D"]
+polygon = PoolVector2Array( 16, 16, -16, 16, -16, -16, 16, -16 )
+
+[node name="Block6" type="Sprite" parent="build"]
+position = Vector2( 1985, 315 )
+scale = Vector2( 7.32812, 3.15625 )
+texture = ExtResource( 4 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="build/Block6"]
+visible = false
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="build/Block6/StaticBody2D"]
+polygon = PoolVector2Array( 16, 16, -16, 16, -16, -16, 16, -16 )
+
+[node name="Block7" type="Sprite" parent="build"]
+position = Vector2( 2253, 309 )
+scale = Vector2( 7.32812, 3.15625 )
+texture = ExtResource( 4 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="build/Block7"]
+visible = false
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="build/Block7/StaticBody2D"]
+polygon = PoolVector2Array( 16, 16, -16, 16, -16, -16, 16, -16 )
+
+[node name="Block8" type="Sprite" parent="build"]
+position = Vector2( 2589, 403 )
+scale = Vector2( 7.32812, 3.15625 )
+texture = ExtResource( 4 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="build/Block8"]
+visible = false
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="build/Block8/StaticBody2D"]
+polygon = PoolVector2Array( 16, 16, -16, 16, -16, -16, 16, -16 )
+
+[node name="Block9" type="Sprite" parent="build"]
+position = Vector2( 2918, 462 )
+scale = Vector2( 7.32812, 3.15625 )
+texture = ExtResource( 4 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="build/Block9"]
+visible = false
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="build/Block9/StaticBody2D"]
+polygon = PoolVector2Array( 16, 16, -16, 16, -16, -16, 16, -16 )
+
+[node name="Block10" type="Sprite" parent="build"]
+position = Vector2( 3222, 420.25 )
+scale = Vector2( 7.32812, 4.32813 )
+texture = ExtResource( 4 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="build/Block10"]
+visible = false
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="build/Block10/StaticBody2D"]
+polygon = PoolVector2Array( 16, 16, -16, 16, -16, -16, 16, -16 )
+
+[node name="Block11" type="Sprite" parent="build"]
+position = Vector2( 3526, 363 )
+scale = Vector2( 7.32812, 4.32813 )
+texture = ExtResource( 4 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="build/Block11"]
+visible = false
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="build/Block11/StaticBody2D"]
+polygon = PoolVector2Array( 16, 16, -16, 16, -16, -16, 16, -16 )
