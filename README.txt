@@ -1,1 +1,1 @@
-Repo
+This is the official repository where you can download maps and scripted entities for your maps.
